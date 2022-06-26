@@ -1,0 +1,841 @@
+                                @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+                                * {
+                                    padding: 0;
+                                    margin: 0;
+                                    box-sizing: border-box;
+                                    scroll-behavior: smooth;
+                                }
+                                
+                                header {
+                                    background: rgba(83, 74, 74, 0.6);
+                                    border-bottom: 1px solid rgb(255, 255, 255);
+                                    width: 100%;
+                                    position: fixed;
+                                    z-index: 999;
+                                }
+                                
+                                body {
+                                    background: #333;
+                                    color: #fff;
+                                }
+                                
+                                li {
+                                    list-style: none;
+                                }
+                                
+                                a {
+                                    color: white;
+                                    text-decoration: none;
+                                }
+                                
+                                .navbar {
+                                    display: flex;
+                                    min-height: 70px;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    padding: 0 24px;
+                                }
+                                
+                                .nav-branding {
+                                    font-size: 2rem;
+                                    padding-left: 3px;
+                                    text-transform: uppercase;
+                                    font-style: italic;
+                                }
+                                
+                                .nav-menu {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    text-transform: uppercase;
+                                    font-weight: bolder;
+                                    padding-left: 30%;
+                                    font-family: Arial, Helvetica, sans-serif;
+                                    gap: 30px;
+                                }
+                                
+                                .nav-link {
+                                    transition: 0.7s ease;
+                                    padding: 10px 25px;
+                                    color: #ffff;
+                                    font-size: 16px;
+                                    text-transform: uppercase;
+                                    text-decoration: none;
+                                    font-family: Arial, Helvetica, sans-serif;
+                                }
+                                
+                                .nav-link:hover {
+                                    background: rgba(177, 167, 167, 0.7);
+                                    border-radius: 6px;
+                                }
+                                
+                                .hamburger {
+                                    display: none;
+                                    cursor: pointer;
+                                }
+                                
+                                .bar {
+                                    display: block;
+                                    width: 25px;
+                                    height: 3px;
+                                    margin: 5px auto;
+                                    -webkit-transition: all 0.3s ease-in-out;
+                                    transition: all 0.3s ease-in-out;
+                                    background-color: white;
+                                }
+                                
+                                section#home {
+                                    background: url(bryan.png);
+                                    background-repeat: no-repeat;
+                                    max-width: 100%;
+                                    height: 100vh;
+                                    background-size: contain;
+                                    background-size: 100%;
+                                    background-position-y: 30%;
+                                }
+                                
+                                section#home img {
+                                    display: none;
+                                    background-repeat: no-repeat;
+                                    width: 100%;
+                                    height: auto;
+                                    background-size: 100%;
+                                    background-size: 100%;
+                                }
+                                
+                                section#aboutme {
+                                    height: 1050px;
+                                    width: 100%;
+                                    background: rgba(78, 77, 77, 0.9) url(suit.png);
+                                    background-blend-mode: darken;
+                                    background-size: cover;
+                                    background-position-x: 50%;
+                                }
+                                
+                                section#aboutme .horizontal {
+                                    position: absolute;
+                                    background: linear-gradient(to right, rgb(255, 206, 206));
+                                    width: 20%;
+                                    height: 5px;
+                                    border: none;
+                                    background-color: rgb(255, 206, 206);
+                                    margin-top: 10%;
+                                    margin-left: 60%;
+                                }
+                                
+                                section#aboutme .line {
+                                    position: absolute;
+                                    background: linear-gradient(to right, #f82f2f);
+                                    width: 20%;
+                                    height: 5px;
+                                    border: none;
+                                    background-color: rgba(255, 5, 5, .9);
+                                    margin-top: 10%;
+                                    margin-left: 20%;
+                                }
+                                
+                                section#aboutme .h {
+                                    position: absolute;
+                                    font-weight: bold;
+                                    font-size: 25px;
+                                    margin-top: 9.1%;
+                                    text-transform: uppercase;
+                                    letter-spacing: 10px;
+                                    margin-left: 580px;
+                                }
+                                
+                                section#aboutme .about {
+                                    color: rgba(255, 5, 5, .9);
+                                }
+                                
+                                section#aboutme .me {
+                                    color: rgb(255, 206, 206);
+                                }
+                                
+                                section#aboutme .picturebox {
+                                    position: absolute;
+                                    width: 300px;
+                                    height: 500px;
+                                    background: #ccaaaa;
+                                    overflow: auto;
+                                    margin-left: 5%;
+                                    margin-top: 19%;
+                                    box-shadow: 0 2px 10px rgba(231, 216, 216, 0.7);
+                                    opacity: 0.9;
+                                    color: #fff;
+                                    border-radius: 6px;
+                                    backdrop-filter: blur(15px);
+                                    border: 2px solid transparent;
+                                    background-clip: padding-box;
+                                    background-color: rgba(155, 123, 123, 0.014);
+                                }
+                                
+                                section#aboutme .graduate {
+                                    height: 170px;
+                                    width: 150px;
+                                    margin-top: 20px;
+                                    margin-left: 68px;
+                                }
+                                
+                                section#aboutme .personal {
+                                    font-family: Arial, Helvetica, sans-serif;
+                                    font-weight: bold;
+                                    font-size: 20px;
+                                    text-align: left;
+                                    margin-left: 23px;
+                                    margin-top: 20px;
+                                }
+                                
+                                section#aboutme ul {
+                                    margin-left: 30px;
+                                    margin-top: 10px;
+                                    line-height: 2;
+                                }
+                                
+                                section#aboutme ul li {
+                                    font-size: 15px;
+                                    color: white;
+                                    text-align: left;
+                                }
+                                
+                                section#aboutme .qoute {
+                                    position: absolute;
+                                    width: 910px;
+                                    font-weight: lighter;
+                                    font-style: italic;
+                                    font-size: 15px;
+                                    margin-top: 19%;
+                                    margin-left: 30%;
+                                }
+                                
+                                section#aboutme .qoute h1 {
+                                    font-size: 30px;
+                                    text-align: center;
+                                }
+                                
+                                section#aboutme .qoute ::before {
+                                    content: '\201c';
+                                    top: 10px;
+                                    left: -40px;
+                                }
+                                
+                                section#aboutme .qoute ::after {
+                                    content: '\201d';
+                                    bottom: -30px;
+                                }
+                                
+                                section#aboutme .explain {
+                                    position: absolute;
+                                    height: 100px;
+                                    margin-top: 25%;
+                                    margin-left: 35%;
+                                    font-weight: lighter;
+                                    padding: 12px 20px;
+                                }
+                                
+                                section#aboutme .allword {
+                                    font-size: 22px;
+                                    margin-top: -2px;
+                                    margin-left: 80%;
+                                    width: 700px;
+                                    text-align: justify;
+                                    position: absolute;
+                                }
+                                
+                                section#aboutme .introduction {
+                                    width: 35%;
+                                    position: absolute;
+                                    height: 60%;
+                                    margin-left: 40%;
+                                    margin-top: 45%;
+                                    box-shadow: 0 2px 10px rgba(231, 216, 216, 0.7);
+                                    opacity: 0.9;
+                                    color: #fff;
+                                    border-radius: 6px;
+                                    backdrop-filter: blur(15px);
+                                    border: 2px solid transparent;
+                                    background-clip: padding-box;
+                                    background-color: rgba(155, 123, 123, 0.014);
+                                }
+                                
+                                section#aboutme .educational {
+                                    position: absolute;
+                                    font-size: 25px;
+                                    margin-top: 10px;
+                                    margin-left: 6%;
+                                }
+                                
+                                section#aboutme .ground {
+                                    margin-left: 40px;
+                                    margin-top: 40px;
+                                }
+                                
+                                section#aboutme .ina {
+                                    margin-top: -10px;
+                                    text-indent: 42px;
+                                    text-transform: capitalize;
+                                    font-size: 17px;
+                                    font-weight: lighter;
+                                    position: absolute;
+                                }
+                                
+                                section#aboutme .para {
+                                    text-indent: 42px;
+                                    line-height: 5;
+                                    margin-top: -12px;
+                                    font-size: 17px;
+                                }
+                                
+                                section#aboutme .year {
+                                    text-indent: 42px;
+                                    font-size: 17px;
+                                    margin-top: -63px;
+                                }
+                                
+                                section#aboutme .ground li {
+                                    margin-top: 5px;
+                                    font-size: 17px;
+                                }
+                                
+                                section#achievement {
+                                    background: url(left.jpg);
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    height: 900px;
+                                    width: 100%;
+                                }
+                                
+                                section#achievement h1 {
+                                    position: absolute;
+                                    margin-top: 6%;
+                                    font-size: 30px;
+                                    margin-left: 42%;
+                                    text-transform: uppercase;
+                                    font-weight: bolder;
+                                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                }
+                                
+                                section#achievement .achieve {
+                                    position: absolute;
+                                    max-width: 1000px;
+                                    margin: auto;
+                                    background-color: #f03b3b;
+                                    overflow: auto;
+                                    height: 600px;
+                                    margin-left: 14%;
+                                    margin-top: 150px;
+                                    box-shadow: 0 4px 20px rgba(231, 216, 216, 0.7);
+                                    opacity: 0.9;
+                                    color: #fff;
+                                    backdrop-filter: blur(15px);
+                                    border: 2px solid transparent;
+                                    background-clip: padding-box;
+                                    background-color: rgba(155, 123, 123, 0.014);
+                                }
+                                
+                                section#achievement .square {
+                                    margin: 12px;
+                                    border: 1px solid rgb(63, 56, 56);
+                                    float: left;
+                                    width: 300px;
+                                }
+                                
+                                section#achievement img {
+                                    width: 90%;
+                                    margin-top: 12px;
+                                    margin-left: 12px;
+                                    height: auto;
+                                }
+                                
+                                section#achievement .desc {
+                                    font-size: 15px;
+                                    font-weight: lighter;
+                                    text-align: center;
+                                }
+                                
+                                section#contact {
+                                    height: 100vh;
+                                    background-color: rgba(155, 123, 123, 0.014)
+                                }
+                                
+                                section#contact img {
+                                    position: absolute;
+                                    height: 350px;
+                                    width: 100%;
+                                    margin-top: 0%;
+                                    background-blend-mode: darken;
+                                    background-repeat: no-repeat;
+                                    background-size: 100%;
+                                }
+                                
+                                section#contact .detail {
+                                    position: absolute;
+                                    text-align: center;
+                                    height: 100px;
+                                    font-size: 40px;
+                                    font-weight: lighter;
+                                    width: 100%;
+                                    text-transform: uppercase;
+                                    z-index: 1;
+                                    color: rgba(255, 249, 249, 0.925);
+                                    margin-top: 6%;
+                                }
+                                
+                                section#contact .touchpara {
+                                    position: absolute;
+                                    text-align: center;
+                                    height: 100px;
+                                    font-size: 25px;
+                                    font-weight: lighter;
+                                    width: 100%;
+                                    font-style: italic;
+                                    z-index: 1;
+                                    color: rgba(255, 249, 249, 0.925);
+                                    margin-top: 12%;
+                                }
+                                
+                                section#contact .service {
+                                    height: 300px;
+                                    width: 280px;
+                                    background-color: rgba(255, 255, 255, 0.1);
+                                    position: absolute;
+                                    margin-left: 15%;
+                                    margin-top: 20%;
+                                    border-radius: 6px;
+                                    backdrop-filter: blur(15px);
+                                    border: 2px solid transparent;
+                                    background-clip: padding-box;
+                                    text-align: center;
+                                }
+                                
+                                section#contact .serve {
+                                    text-align: center;
+                                    font-size: 30px;
+                                    margin-top: 20px;
+                                }
+                                
+                                section#contact .icando {
+                                    position: absolute;
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    margin-left: 20px;
+                                    margin-top: 25px;
+                                    text-align: left;
+                                }
+                                
+                                section#contact .skill {
+                                    position: absolute;
+                                    font-size: 18px;
+                                    margin-left: 70px;
+                                    margin-top: 60px;
+                                    text-align: left;
+                                }
+                                
+                                section#contact .social {
+                                    height: 300px;
+                                    width: 280px;
+                                    background-color: rgba(255, 255, 255, 0.1);
+                                    position: absolute;
+                                    margin-left: 40%;
+                                    margin-top: 20%;
+                                    border-radius: 6px;
+                                    backdrop-filter: blur(15px);
+                                    border: 2px solid transparent;
+                                    background-clip: padding-box;
+                                    text-align: center;
+                                }
+                                
+                                section#contact .media ul li {
+                                    display: flex;
+                                    text-decoration: none;
+                                }
+                                
+                                section#contact .contactHeader {
+                                    text-align: center;
+                                    font-size: 30px;
+                                    margin-top: 20px;
+                                }
+                                
+                                section#contact .number {
+                                    font-size: 30px;
+                                    padding: 10px 25px;
+                                    margin-top: 8%;
+                                    text-align: left;
+                                }
+                                
+                                section#contact .Pnumber {
+                                    font-size: 15px;
+                                    text-align: justify;
+                                    margin-top: 30px;
+                                    font-weight: lighter;
+                                    margin-left: -10px;
+                                }
+                                
+                                section#contact .email {
+                                    position: absolute;
+                                    font-size: 30px;
+                                    padding: 10px 25px;
+                                    margin-top: 1%;
+                                    text-align: justify;
+                                }
+                                
+                                section#contact .Eemail {
+                                    position: absolute;
+                                    font-size: 16px;
+                                    text-align: left;
+                                    margin-top: 18px;
+                                    margin-left: 70px;
+                                    font-weight: lighter;
+                                }
+                                
+                                section#contact .visit {
+                                    position: relative;
+                                }
+                                
+                                section#contact .visitme {
+                                    position: absolute;
+                                    margin-top: 50px;
+                                    margin-left: 25%;
+                                }
+                                
+                                section#contact .fb {
+                                    position: absolute;
+                                    text-decoration: none;
+                                    color: #fff;
+                                    font-size: 35px;
+                                    align-items: center;
+                                    margin-top: 100px;
+                                    margin-left: -80px;
+                                }
+                                
+                                section#contact .fb :hover {
+                                    color: rgba(161, 154, 154, 0.7);
+                                }
+                                
+                                section#contact .sololearn {
+                                    position: absolute;
+                                    color: #fff;
+                                    font-size: 35px;
+                                    text-decoration: none;
+                                    margin-top: 100px;
+                                    margin-left: -15px;
+                                }
+                                
+                                section#contact .sololearn :hover {
+                                    color: rgba(161, 154, 154, 0.7);
+                                }
+                                
+                                section#contact .github {
+                                    position: absolute;
+                                    text-decoration: none;
+                                    color: #fff;
+                                    font-size: 35px;
+                                    align-items: center;
+                                    margin-top: 100px;
+                                    margin-left: 50px;
+                                }
+                                
+                                section#contact .github :hover {
+                                    color: rgba(161, 154, 154, 0.7);
+                                }
+                                
+                                section#contact .location {
+                                    height: 300px;
+                                    width: 280px;
+                                    margin-left: 65%;
+                                    background-color: rgba(255, 255, 255, 0.1);
+                                    position: absolute;
+                                    margin-top: 20%;
+                                    border-radius: 6px;
+                                    backdrop-filter: blur(15px);
+                                    border: 2px solid transparent;
+                                    background-clip: padding-box;
+                                    text-align: center;
+                                }
+                                
+                                section#contact .locationHeader {
+                                    text-align: center;
+                                    font-size: 25px;
+                                    margin-top: 20px;
+                                }
+                                
+                                section#contact .address {
+                                    position: absolute;
+                                    font-size: 30px;
+                                    padding: 10px 25px;
+                                    margin-top: 10%;
+                                    text-align: left;
+                                    margin-left: -50%;
+                                }
+                                
+                                section#contact .text {
+                                    position: absolute;
+                                    font-size: 15px;
+                                    margin-top: 45px;
+                                    margin-left: 70px;
+                                }
+                                
+                                section#contact .house {
+                                    font-size: 30px;
+                                    text-align: left;
+                                    margin-top: 32%;
+                                    margin-left: -40%;
+                                    position: absolute;
+                                }
+                                
+                                section#contact .seaside {
+                                    font-size: 15px;
+                                    text-align: left;
+                                    margin-top: 35%;
+                                    margin-left: 70px;
+                                    position: absolute;
+                                }
+                                /*RESPONSIVE AREAAAAA*/
+                                
+                                @media screen and (max-width: 375px) {
+                                    .hamburger {
+                                        position: fixed;
+                                        display: block;
+                                        z-index: 999;
+                                        margin-left: 80%;
+                                    }
+                                    .hamburger.active .bar:nth-child(2) {
+                                        opacity: 0;
+                                    }
+                                    .hamburger.active .bar:nth-child(1) {
+                                        transform: translateY(8px) rotate(45deg);
+                                    }
+                                    .hamburger.active .bar:nth-child(3) {
+                                        transform: translateY(-8px) rotate(-45deg);
+                                    }
+                                    .nav-menu {
+                                        position: fixed;
+                                        left: -120%;
+                                        top: 70px;
+                                        gap: 0;
+                                        flex-direction: column;
+                                        background: rgba(83, 74, 74, 0.6);
+                                        width: 100%;
+                                        padding-right: 25%;
+                                        text-align: center;
+                                        transition: 0.3s;
+                                    }
+                                    .nav-item {
+                                        margin: 16px 0;
+                                    }
+                                    .nav-menu.active {
+                                        left: 0;
+                                    }
+                                    .nav-branding {
+                                        font-size: 20px;
+                                    }
+                                    .nav-branding {
+                                        font-size: 20px;
+                                    }
+                                    section#home {
+                                        height: 35vh;
+                                    }
+                                    section#home img {
+                                        display: block;
+                                    }
+                                    section#aboutme {
+                                        height: 240vh;
+                                    }
+                                    section#aboutme .h {
+                                        font-size: 20px;
+                                        margin-left: 28%;
+                                        margin-top: 16%;
+                                    }
+                                    section#aboutme .horizontal {
+                                        margin-left: 72.7%;
+                                        margin-top: 72px;
+                                        height: 2px;
+                                        width: 50px;
+                                    }
+                                    section#aboutme .line {
+                                        margin-top: 72px;
+                                        height: 2px;
+                                        width: 50px;
+                                        margin-left: 50px;
+                                    }
+                                    section#aboutme .picturebox {
+                                        margin-top: 40%;
+                                        margin-left: 10%;
+                                    }
+                                    section#aboutme .graduate {
+                                        height: 150px;
+                                        margin-top: 10%;
+                                    }
+                                    section#aboutme .personal {
+                                        font-size: 18px;
+                                        margin-left: 26%;
+                                        text-transform: uppercase;
+                                    }
+                                    section#aboutme .introduction {
+                                        width: 90%;
+                                        margin-top: 190%;
+                                        margin-left: 5%;
+                                    }
+                                    section#aboutme .educational {
+                                        font-size: 18px;
+                                        margin-left: 4%;
+                                        text-transform: uppercase;
+                                        margin-top: 6%;
+                                    }
+                                    section#aboutme .ground li {
+                                        margin-left: -10%;
+                                    }
+                                    section#aboutme .ina {
+                                        margin-left: -5%;
+                                        font-size: 15px;
+                                    }
+                                    section#aboutme .para {
+                                        margin-left: -5%;
+                                        font-size: 15px;
+                                    }
+                                    section#aboutme .year {
+                                        margin-left: -5%;
+                                        font-size: 15px;
+                                    }
+                                    section#aboutme .qoute {
+                                        width: 95%;
+                                        margin-top: 310%;
+                                        margin-left: 10px;
+                                    }
+                                    section#aboutme .qoute h1 {
+                                        font-size: 20px;
+                                    }
+                                    section#aboutme .explain .allword {
+                                        margin-left: -115px;
+                                        margin-top: 2930%;
+                                        width: 300px;
+                                        font-size: 15px;
+                                    }
+                                    section#achievement {
+                                        height: 120vh;
+                                    }
+                                    section#achievement h1 {
+                                        font-size: 25px;
+                                        margin-left: 23%;
+                                        margin-top: 21%;
+                                    }
+                                    section#achievement .achieve {
+                                        width: 95%;
+                                        margin-left: 2%;
+                                    }
+                                    section#achievement .square {
+                                        margin-left: 7%;
+                                    }
+                                    section#contact {
+                                        height: 180vh;
+                                    }
+                                    section#contact img {
+                                        height: 40%;
+                                    }
+                                    section#contact .detail {
+                                        font-size: 20px;
+                                        padding-top: 20%;
+                                    }
+                                    section#contact .touchpara {
+                                        font-size: 15px;
+                                        padding-top: 24%;
+                                    }
+                                    section#contact .service {
+                                        width: 60%;
+                                        height: 35%;
+                                        margin-left: 19%;
+                                        margin-top: 55%;
+                                    }
+                                    section#contact .serve {
+                                        font-size: 22px;
+                                    }
+                                    section#contact .icando {
+                                        font-size: 18px;
+                                    }
+                                    section#contact .skill {
+                                        font-size: 16px;
+                                    }
+                                    section#contact .social {
+                                        margin-top: 125%;
+                                        width: 60%;
+                                        margin-left: 19%;
+                                    }
+                                    section#contact .contactHeader {
+                                        font-size: 22px;
+                                    }
+                                    section#contact .number {
+                                        margin-left: 31%;
+                                        position: absolute;
+                                        margin-top: -1%;
+                                        font-size: 25px;
+                                    }
+                                    section#contact .Pnumber {
+                                        position: absolute;
+                                        margin-top: 17%;
+                                        margin-left: 21%;
+                                        font-size: 15px;
+                                        line-height: 1.5;
+                                    }
+                                    section#contact .email {
+                                        margin-left: 31%;
+                                        position: absolute;
+                                        margin-top: 35%;
+                                        font-size: 25px;
+                                    }
+                                    section#contact .Eemail {
+                                        position: absolute;
+                                        margin-top: 52%;
+                                        margin-left: 10%;
+                                        font-size: 15px;
+                                        line-height: 1.5;
+                                    }
+                                    section#contact .visitme {
+                                        font-size: 22px;
+                                        margin-top: 65%;
+                                    }
+                                    section#contact .fb {
+                                        font-size: 30px;
+                                        margin-top: 85%;
+                                    }
+                                    section#contact .sololearn {
+                                        font-size: 30px;
+                                        margin-top: 85%;
+                                    }
+                                    section#contact .github {
+                                        font-size: 30px;
+                                        margin-top: 85%;
+                                    }
+                                    section#contact .location {
+                                        width: 60%;
+                                        margin-top: 213%;
+                                        height: 35%;
+                                        margin-left: 19%;
+                                    }
+                                    section#contact .locationHeader {
+                                        font-size: 22px;
+                                        text-align: center;
+                                    }
+                                    section#contact .address {
+                                        margin-left: -18%;
+                                        position: absolute;
+                                        margin-top: -1%;
+                                        font-size: 25px;
+                                    }
+                                    section#contact .text {
+                                        font-size: 15px;
+                                        margin-left: 18%;
+                                        margin-top: 19%;
+                                        line-height: 1.5;
+                                    }
+                                    section#contact .house {
+                                        margin-left: -6.5%;
+                                        position: absolute;
+                                        margin-top: 45%;
+                                        font-size: 25px;
+                                    }
+                                    section#contact .seaside {
+                                        font-size: 15px;
+                                        margin-top: 60%;
+                                        margin-left: 25%;
+                                    }
+                                }
